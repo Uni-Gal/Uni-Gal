@@ -1,113 +1,75 @@
-## UniGal
+# UniGal
 
 
-### UniGal-介绍
+## UniGal-介绍
 
 UniGal是一个希望能通过统一的语法标准和格式，允许从各种不同的引擎导入，并允许各游戏引擎的开发者构建支持UniGal的导入工具，实现类似ONNX一样的跨框架的方案支持，允许开发者快速从一套框架迁移到另一套更适合的框架，实现迈向开放世界的第一步。
 
-### UniGal-代码格式
+UniGal是一个完整的项目，分为[Script](https://github.com/Uni-Gal/UniGal-Script)(脚本语法)、[Diagram](https://github.com/Uni-Gal/UniGal-Diagram)(流程图语法)、[Complier&Interpreter](https://github.com/Uni-Gal/UniGal-Complier-Interpreter)(编译器和解释器)三部分。您可以点击进入不同子项目的仓库查看。
 
-UniGal-Script是一种转为描述该框架设计的简单易用的语句。It includes conventions for
+## UniGal-代码格式
+
+### UniGal-Script
+
+UniGal-Script是一种转为描述该框架设计的简单易用的语句。
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <unigal>
   <head>
-    <src>
-      BKE
-    </src>
   </head>
   <body>
     <text>
       <name>
-        NULL
-        <comment>
-          //姓名
-        </comment>
       </name>
       <content>
-        <part>
-          坐在车厢里的人总会向外眺望。
-        </part>
-        <comment>
-          //文本内容
-        </comment>
-      </content>
-    </text>
-    <text>
-      <name>
-        NULL
-        <comment>
-          //姓名
-        </comment>
-      </name>
-      <content>
-        <part>
-          眺望的理由多种多样：
-        </part>
-        <action>
-          newline
-        </action>
-        <part>
-          晕车，发呆，欣赏风景……
-        </part>
-        <comment>
-          //文本内容
-        </comment>
-      </content>
-    </text>
-    <text>
-      <name>
-        NULL
-        <comment>
-          //姓名
-        </comment>
-      </name>
-      <content>
-        <part>
-          亦或者只是下意识地一瞥。
-        </part>
-        <comment>
-          //文本内容
-        </comment>
-      </content>
-    </text>
-    <text>
-      <name>
-        NULL
-        <comment>
-          //姓名
-        </comment>
-      </name>
-      <content>
-        <part>
-          但人们心中压抑的冲动都是相似的。
-        </part>
-        <comment>
-          //文本内容
-        </comment>
       </content>
     </text>
   </body>
 </unigal>
 ```
 
+要查看完整的代码格式和文档，您可以[点击这里查看](https://github.com/Uni-Gal/UniGal-Script/blob/master/Docs/zh_CN/UniGal-main.md#%E5%85%A8%E9%83%A8%E5%8A%9F%E8%83%BD%E7%9A%84%E4%BB%A3%E7%A0%81%E7%A4%BA%E8%8C%83%E5%8E%9F%E5%9E%8Bprototype)完整文档或[点击这里查看](https://github.com/Uni-Gal/UniGal-Script/blob/master/Docs/zh_CN/UniGal-main.md#%E5%85%A8%E9%83%A8%E5%8A%9F%E8%83%BD%E7%9A%84%E4%BB%A3%E7%A0%81%E7%A4%BA%E8%8C%83%E5%8E%9F%E5%9E%8Bprototype)目录树
+
+### UniGal-Diagram
+
+```XML
+<node>
+  <identification>
+  </identification>
+  <description>
+  </description>
+  <type>
+    <switch>
+    </switch>
+    <action operation="add"><!--此外还有sub,multiply,divide,square,not-->
+    </action>
+  </type>
+  <loop>
+  </loop>
+  <nextlist>
+  </nextlist>
+  <sourcelist>
+  </sourcelist>
+  <addtional><!--以下均为选加，也可以需要啥加啥-->
+  </addtional>
+</node>
+```
+
+要查看完整的代码结构和文档，您可以[点击这里查看](https://github.com/Uni-Gal/UniGal-Diagram/blob/main/prototype.xml)
+
+### UniGal-Complier&Interpreter
+
+```
+Waiting to fill
+```
 
 
-——————————————————————————-
 
-维护人员相关内容
+## 联系与支持
 
+~~联系我们（X）~~
 
+联系我（√）
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Uni-Gal/Uni-Gal.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-
-You can use the [editor on GitHub](https://github.com/Uni-Gal/Uni-Gal.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Email：keaitianxinmail@qq.com
